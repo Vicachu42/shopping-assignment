@@ -1,23 +1,95 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "shikona": "Hakuho",
-            "rank": "Yokozuna",
-            "height": 150,
-            "weight": 150,
-            "price": 150090000,
-            "picture": 10
-        },
-        {
-            "id": 2,
-            "shikona": "Kakuruy",
-            "rank": "Yokozuna",
-            "height": 150,
-            "weight": 150,
-            "price": 150090000,
-            "picture": 10
-        }
-    ],
-    "cart": []
+  "products": [
+    {
+      "id": 1,
+      "shikona": "Hakuho",
+      "rank": "Yokozuna",
+      "height": 150,
+      "weight": 150,
+      "price": 100,
+      "picture": 100
+    },
+    {
+      "id": 2,
+      "shikona": "Takakeisho",
+      "rank": "Ozeki",
+      "height": 150,
+      "weight": 150,
+      "price": 100,
+      "picture": 100
+    },
+    {
+      "id": 3,
+      "shikona": "Asanoyama",
+      "rank": "Ozeki",
+      "height": 150,
+      "weight": 150,
+      "price": 100,
+      "picture": 100
+    },
+    {
+      "id": 4,
+      "shikona": "Mitakeumi",
+      "rank": "Sekiwake",
+      "height": 150,
+      "weight": 150,
+      "price": 100,
+      "picture": 100
+    },
+    {
+      "id": 5,
+      "shikona": "Takanosho",
+      "rank": "Sekiwake",
+      "height": 150,
+      "weight": 150,
+      "price": 100,
+      "picture": 100
+    },
+    {
+      "id": 6,
+      "shikona": "Wakatakakage",
+      "rank": "Maegashira",
+      "height": 150,
+      "weight": 150,
+      "price": 100,
+      "picture": 100
+    },
+    {
+      "id": 7,
+      "shikona": "Tobizaru",
+      "rank": "Maegashira",
+      "height": 150,
+      "weight": 150,
+      "price": 100,
+      "picture": 100
+    },
+    {
+      "id": 8,
+      "shikona": "Tochinoshin",
+      "rank": "Maegashira",
+      "height": 150,
+      "weight": 150,
+      "price": 100,
+      "picture": 100
+    },
+    {
+      "id": 9,
+      "shikona": "Enho",
+      "rank": "Maegashira",
+      "height": 150,
+      "weight": 150,
+      "price": 100,
+      "picture": 100
+    },
+    {
+      "id": 10,
+      "shikona": "Kotoshoho",
+      "rank": "Maegashira",
+      "height": 150,
+      "weight": 150,
+      "price": 100,
+      "picture": 100
+    }
+  ],
+  "cart": []
 }
