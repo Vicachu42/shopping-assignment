@@ -7,6 +7,8 @@ const database = new lowdb(adapter);
 const app = express();
 const port = 8000;
 
+const errinCart = new Error('This product is already in your cart');
+
 // app.put (För att uppdatera värden hellre än skapa nya)
 
 app.get('/api/products', (request, response) => {
@@ -26,8 +28,8 @@ app.post('/api/cart', (request, response) => {
 
     if (productInCart !== undefined) { 
         //If product already exists
-        console.log('This product is already in your cart');
-        response.json({success: false});
+        console.log(':P:P:P:P');
+        response.json(errinCart.message);
     } else {
         //If product doesn't exist
         database.get('cart').push(product).write();
