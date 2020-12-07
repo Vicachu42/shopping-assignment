@@ -7,9 +7,7 @@ const database = new lowdb(adapter);
 const app = express();
 const port = 8000;
 
-// app.post
-// app.put
-// app.delete
+// app.put (För att uppdatera värden hellre än skapa nya)
 
 app.get('/api/products', (request, response) => {
     const data = database.get('products').value();
@@ -24,13 +22,24 @@ app.get('/api/cart', (request, response) => {
 app.post('/api/cart', (request, response) => {
     const queryID = Number(request.query.id);
     const product = database.get('products').find({id: queryID}).value();
+    const productInCart = database.get('cart').find({id: queryID}).value();
 
-    if (product === undefined) {
+    if (productInCart !== undefined) { 
+        //If product already exists
+        console.log('This product is already in your cart');
+        response.json({success: false});
+    } else {
+        //If product doesn't exist
+        database.get('cart').push(product).write();
+        response.json({success: true});
+    }
+
+    /*if (product === undefined) {
         response.json({success: false});
     } else {
         database.get('cart').push(product).write();
         response.json({success: true});
-    }
+    }*/
 });
 
 app.delete('/api/cart', (request, response) => {
@@ -46,5 +55,5 @@ app.delete('/api/cart', (request, response) => {
 
 app.listen(port);
 
-console.log(database.get('products').value());
+//console.log(database.get('products').value());
 console.log(database.get('cart').value());

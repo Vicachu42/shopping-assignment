@@ -91,33 +91,5 @@
       "picture": "https://static.wixstatic.com/media/3e9c21_d4e6ec9f8f7b489ca76f94adf5240388~mv2.jpg/v1/fill/w_270,h_474,al_c,q_90/3e9c21_d4e6ec9f8f7b489ca76f94adf5240388~mv2.jpg"
     }
   ],
-  "cart": [
-    {
-      "id": 3,
-      "shikona": "Asanoyama",
-      "rank": "Ozeki",
-      "height": 150,
-      "weight": 150,
-      "price": 100,
-      "picture": "https://static.wikia.nocookie.net/sumowrestling/images/8/87/Asanoyama_5.jpg/revision/latest/scale-to-width-down/340?cb=20200829193452"
-    },
-    {
-      "id": 5,
-      "shikona": "Takanosho",
-      "rank": "Sekiwake",
-      "height": 150,
-      "weight": 150,
-      "price": 100,
-      "picture": "https://static.wixstatic.com/media/3e9c21_cb50712546424b4cb834518ac4a7e023~mv2.jpg/v1/fill/w_270,h_474,al_c,q_90/3e9c21_cb50712546424b4cb834518ac4a7e023~mv2.jpg"
-    },
-    {
-      "id": 8,
-      "shikona": "Tochinoshin",
-      "rank": "Maegashira",
-      "height": 150,
-      "weight": 150,
-      "price": 100,
-      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfWtC7ZKu_R54hGU2_7Rv57PZW091qINpO0g&usqp=CAU"
-    }
-  ]
+  "cart": []
 }

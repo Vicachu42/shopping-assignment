@@ -7,6 +7,7 @@ Update so far (Monday, 10:55)
 	- Put all the products into a cart
 	- Delete products from cart
 	- Getting the cart with products in it
+- A product can't be put into the cart twice
 
 This is missing:
 - Not being able to put the same product in the cart twice
