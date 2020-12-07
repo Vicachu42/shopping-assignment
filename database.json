@@ -1,0 +1,23 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "shikona": "Hakuho",
+            "rank": "Yokozuna",
+            "height": 150,
+            "weight": 150,
+            "price": 150090000,
+            "picture": 10
+        },
+        {
+            "id": 2,
+            "shikona": "Kakuruy",
+            "rank": "Yokozuna",
+            "height": 150,
+            "weight": 150,
+            "price": 150090000,
+            "picture": 10
+        }
+    ],
+    "cart": []
+}
