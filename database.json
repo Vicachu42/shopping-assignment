@@ -7,7 +7,7 @@
       "height": 150,
       "weight": 150,
       "price": 100,
-      "picture": 100
+      "picture": "https://static.wikia.nocookie.net/sumowrestling/images/a/a3/Hakuho_8.jpg/revision/latest/scale-to-width-down/340?cb=20200908220651"
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "height": 150,
       "weight": 150,
       "price": 100,
-      "picture": 100
+      "picture": "https://lh3.googleusercontent.com/proxy/sRM35gP-quh98ahFlp99136wPYfP_a1TgYZn25E_PdjtmHgAIIJI4risOkp7PQAExBOnL3sYcEgGR3o9TmaWn5jyYgxwSrKS5i6856sjmQr0ySFUsDhB4g"
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "height": 150,
       "weight": 150,
       "price": 100,
-      "picture": 100
+      "picture": "https://static.wikia.nocookie.net/sumowrestling/images/8/87/Asanoyama_5.jpg/revision/latest/scale-to-width-down/340?cb=20200829193452"
     },
     {
       "id": 4,
@@ -34,7 +34,7 @@
       "height": 150,
       "weight": 150,
       "price": 100,
-      "picture": 100
+      "picture": "https://displacedkansan.files.wordpress.com/2019/01/mitakeumihisashi.jpg?w=1280"
     },
     {
       "id": 5,
@@ -43,7 +43,7 @@
       "height": 150,
       "weight": 150,
       "price": 100,
-      "picture": 100
+      "picture": "https://static.wixstatic.com/media/3e9c21_cb50712546424b4cb834518ac4a7e023~mv2.jpg/v1/fill/w_270,h_474,al_c,q_90/3e9c21_cb50712546424b4cb834518ac4a7e023~mv2.jpg"
     },
     {
       "id": 6,
@@ -52,7 +52,7 @@
       "height": 150,
       "weight": 150,
       "price": 100,
-      "picture": 100
+      "picture": "https://static.wixstatic.com/media/3e9c21_44da9e2ad3b14de7961a7bfc76d41cea~mv2.jpg/v1/fill/w_270,h_474,al_c,q_90/3e9c21_44da9e2ad3b14de7961a7bfc76d41cea~mv2.jpg"
     },
     {
       "id": 7,
@@ -61,7 +61,7 @@
       "height": 150,
       "weight": 150,
       "price": 100,
-      "picture": 100
+      "picture": "https://static.wixstatic.com/media/3e9c21_f4ac18cc022f47a182200a650eb5a970~mv2.jpg/v1/fill/w_270,h_474,al_c,q_90/3e9c21_f4ac18cc022f47a182200a650eb5a970~mv2.jpg"
     },
     {
       "id": 8,
@@ -70,7 +70,7 @@
       "height": 150,
       "weight": 150,
       "price": 100,
-      "picture": 100
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfWtC7ZKu_R54hGU2_7Rv57PZW091qINpO0g&usqp=CAU"
     },
     {
       "id": 9,
@@ -79,7 +79,7 @@
       "height": 150,
       "weight": 150,
       "price": 100,
-      "picture": 100
+      "picture": "https://thegreenbrew.files.wordpress.com/2019/07/enho.jpg?w=685"
     },
     {
       "id": 10,
@@ -88,8 +88,36 @@
       "height": 150,
       "weight": 150,
       "price": 100,
-      "picture": 100
+      "picture": "https://static.wixstatic.com/media/3e9c21_d4e6ec9f8f7b489ca76f94adf5240388~mv2.jpg/v1/fill/w_270,h_474,al_c,q_90/3e9c21_d4e6ec9f8f7b489ca76f94adf5240388~mv2.jpg"
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": 3,
+      "shikona": "Asanoyama",
+      "rank": "Ozeki",
+      "height": 150,
+      "weight": 150,
+      "price": 100,
+      "picture": "https://static.wikia.nocookie.net/sumowrestling/images/8/87/Asanoyama_5.jpg/revision/latest/scale-to-width-down/340?cb=20200829193452"
+    },
+    {
+      "id": 5,
+      "shikona": "Takanosho",
+      "rank": "Sekiwake",
+      "height": 150,
+      "weight": 150,
+      "price": 100,
+      "picture": "https://static.wixstatic.com/media/3e9c21_cb50712546424b4cb834518ac4a7e023~mv2.jpg/v1/fill/w_270,h_474,al_c,q_90/3e9c21_cb50712546424b4cb834518ac4a7e023~mv2.jpg"
+    },
+    {
+      "id": 8,
+      "shikona": "Tochinoshin",
+      "rank": "Maegashira",
+      "height": 150,
+      "weight": 150,
+      "price": 100,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfWtC7ZKu_R54hGU2_7Rv57PZW091qINpO0g&usqp=CAU"
+    }
+  ]
 }

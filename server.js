@@ -45,3 +45,6 @@ app.delete('/api/cart', (request, response) => {
 });
 
 app.listen(port);
+
+console.log(database.get('products').value());
+console.log(database.get('cart').value());
