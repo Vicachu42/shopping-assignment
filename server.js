@@ -8,6 +8,7 @@ const app = express();
 const port = 8000;
 
 const errinCart = new Error('This product is already in your cart');
+const errInDelete = new Error('This product is not in your cart')
 
 // app.put (För att uppdatera värden hellre än skapa nya)
 
@@ -46,12 +47,17 @@ app.post('/api/cart', (request, response) => {
 
 app.delete('/api/cart', (request, response) => {
     const queryID = Number(request.query.id);
-    const product = database.get('cart').remove({id: queryID}).write();
+    const product = database.get('cart').find({id: queryID}).value();
     console.log(product);
+
     if (product !== undefined) {
+        //If product is in the cart
+        database.get('cart').remove({id: queryID}).write();
         response.json({success: true});
     } else {
-        response.json({success: false});
+        //If product isn't in the cart
+        console.log('Yeah, nah');
+        response.json(errInDelete.message);
     }
 });
 
