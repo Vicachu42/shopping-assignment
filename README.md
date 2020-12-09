@@ -1,6 +1,19 @@
 # shopping-assignment
 
-Update so far (Monday, 10:55)
+Code is not split into two modules, however none of the function is actually there.
+
+Then I need to figure out how to display info about different objects, like: 
+
+om jag invokerar /products/1 så får jag svaret:
+{
+      "id": 1,
+      "shikona": "Hakuho",
+      "rank": "Yokozuna",
+      "picture": "https://static.wikia.nocookie.net/sumowrestling/images/a/a3/Hakuho_8.jpg/revision/latest/scale-to-width-down/340?cb=20200908220651"
+    }
+
+
+Update so far:
 - Product requirements fulfilled
 - These endpoints work:
 	- Get all the products
@@ -18,10 +31,11 @@ Done for a passing grade:
 - Contains a package.json with all the dependencies
 - Every functionality working
 - Being able to use GET, POST, etc at the right time (or argue for your choice)
-
-Missing for a passing grade:
 - Well thought out names for variables and functions
 - Well thought out names for endpoints
+
+Missing for a passing grade:
+-
 
 If I have time/energy:
 - Modules
