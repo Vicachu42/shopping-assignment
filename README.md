@@ -2,16 +2,6 @@
 
 Code is not split into two modules, however none of the function is actually there.
 
-Then I need to figure out how to display info about different objects, like: 
-
-om jag invokerar /products/1 så får jag svaret:
-{
-      "id": 1,
-      "shikona": "Hakuho",
-      "rank": "Yokozuna",
-      "picture": "https://static.wikia.nocookie.net/sumowrestling/images/a/a3/Hakuho_8.jpg/revision/latest/scale-to-width-down/340?cb=20200908220651"
-    }
-
 
 Update so far:
 - Product requirements fulfilled
@@ -23,6 +13,7 @@ Update so far:
 - A product can't be put into the cart twice
 - Error message if you try to put the same product in the cart twice
 - Error message if you try to delete a product from the cart that doesn't exist
+- When adding a product, you get info about the specific product.
 
 This is missing:
 -

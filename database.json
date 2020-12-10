@@ -63,10 +63,40 @@
   ],
   "carts": [
     {
+      "id": 1,
+      "shikona": "Hakuho",
+      "rank": "Yokozuna",
+      "picture": "https://static.wikia.nocookie.net/sumowrestling/images/a/a3/Hakuho_8.jpg/revision/latest/scale-to-width-down/340?cb=20200908220651"
+    },
+    {
+      "id": 2,
+      "shikona": "Takakeisho",
+      "rank": "Ozeki",
+      "picture": "https://lh3.googleusercontent.com/proxy/sRM35gP-quh98ahFlp99136wPYfP_a1TgYZn25E_PdjtmHgAIIJI4risOkp7PQAExBOnL3sYcEgGR3o9TmaWn5jyYgxwSrKS5i6856sjmQr0ySFUsDhB4g"
+    },
+    {
       "id": 3,
       "shikona": "Asanoyama",
       "rank": "Ozeki",
       "picture": "https://static.wikia.nocookie.net/sumowrestling/images/8/87/Asanoyama_5.jpg/revision/latest/scale-to-width-down/340?cb=20200829193452"
+    },
+    {
+      "id": 5,
+      "shikona": "Takanosho",
+      "rank": "Sekiwake",
+      "picture": "https://static.wixstatic.com/media/3e9c21_cb50712546424b4cb834518ac4a7e023~mv2.jpg/v1/fill/w_270,h_474,al_c,q_90/3e9c21_cb50712546424b4cb834518ac4a7e023~mv2.jpg"
+    },
+    {
+      "id": 6,
+      "shikona": "Wakatakakage",
+      "rank": "Maegashira",
+      "picture": "https://static.wixstatic.com/media/3e9c21_44da9e2ad3b14de7961a7bfc76d41cea~mv2.jpg/v1/fill/w_270,h_474,al_c,q_90/3e9c21_44da9e2ad3b14de7961a7bfc76d41cea~mv2.jpg"
+    },
+    {
+      "id": 7,
+      "shikona": "Tobizaru",
+      "rank": "Maegashira",
+      "picture": "https://static.wixstatic.com/media/3e9c21_f4ac18cc022f47a182200a650eb5a970~mv2.jpg/v1/fill/w_270,h_474,al_c,q_90/3e9c21_f4ac18cc022f47a182200a650eb5a970~mv2.jpg"
     }
   ]
 }
