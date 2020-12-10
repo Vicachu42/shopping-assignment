@@ -4,6 +4,7 @@ Code is not split into two modules, however none of the function is actually the
 
 
 Update so far:
+-
 - Product requirements fulfilled
 - These endpoints work:
 	- Get all the products
@@ -19,6 +20,7 @@ This is missing:
 -
 
 Done for a passing grade:
+-
 - Contains a package.json with all the dependencies
 - Every functionality working
 - Being able to use GET, POST, etc at the right time (or argue for your choice)
@@ -29,5 +31,7 @@ Missing for a passing grade:
 -
 
 If I have time/energy:
+-
 - Modules
 - Code review
+- Add a message to the adding or deleting of products
