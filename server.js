@@ -35,7 +35,6 @@ app.post('/api/carts', (request, response) => {
         //If product doesn't exist
         database.get('carts').push(product).write();
         response.json(product);
-        // response.json({success: true});
     }
 });
 
