@@ -1,13 +1,17 @@
 const express = require('express');
+const router = express.Router();
+
 const lowdb = require('lowdb');
 const FileSync = require('lowdb/adapters/FileSync');
 
 const adapter = new FileSync('database.json');
 const database = new lowdb(adapter);
 
-const app = express();
+// const app = express();
 
-exports.get_products = function(request, response) {
+// router.get('/api/products', function (request, response) )
+
+/*exports.get_products = function(request, response) {
     const data = database.get('products').value();
     response.send(data);
 };
@@ -31,8 +35,8 @@ exports.get_products_id = function(request, response) {
 }
 
 exports.get_carts_id = function(request, response) {
-    const cartsId = Number(request.params.id)
-    const data = database.get('carts').find({id: cartsId}).value();
+    const productsId = Number(request.params.id)
+    const data = database.get('carts').find({id: productsId}).value();
 
     if (data !== undefined) {
         response.status(200)
@@ -41,12 +45,12 @@ exports.get_carts_id = function(request, response) {
         response.status(418)
         response.send();
     }
-}
+}*/
 
 const errorAdd = new Error('This product is already in your cart');
 const errorDelete = new Error('This product is not in your cart');
 
-app.get('/api/products/:id', (request, response) => {
+router.get('/products/:id', (request, response) => {
     const productsID = Number(request.params.id);
     const data = database.get('products').find({id: productsID}).value();
 
@@ -59,12 +63,18 @@ app.get('/api/products/:id', (request, response) => {
     }
 });
 
-app.get('/api/carts', (request, response) => {
+router.get('/products', (request, response) => {
+    const data = database.get('products').value();
+    response.send(data);
+});
+
+router.get('/carts', (request, response) => {
     const data = database.get('carts').value();
     response.send(data);
 });
 
-app.post('/api/carts/:id', (request, response) => {
+router.post('/carts/:id', (request, response) => {
+    console.log('Hej!');
     const productsID = Number(request.params.id);
     const data = database.get('products').find({id: productsID}).value();
     const cartsIndex = database.get('carts').find({id: productsID}).value();
@@ -82,7 +92,7 @@ app.post('/api/carts/:id', (request, response) => {
     }
 });
 
-app.delete('/api/carts/:id', (request, response) => {
+router.delete('/carts/:id', (request, response) => {
     const productsID = Number(request.params.id);
     const cartsIndex = database.get('carts').find({id: productsID}).value();
 
@@ -98,3 +108,5 @@ app.delete('/api/carts/:id', (request, response) => {
         response.json(errorDelete.message);
     }
 });
+
+module.exports = router;

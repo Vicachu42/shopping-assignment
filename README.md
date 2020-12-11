@@ -1,4 +1,4 @@
-# shopping-assignment
+# shopping-assignment 
 
 Update so far:
 -
@@ -14,7 +14,7 @@ Update so far:
 - When adding a product, you get info about the specific product.
 - Updated route parameters so you can get, post and a product by typing the number instead of for example "?id=1"
 - Added response codes to the products
-- Split into two modules. While you can get the products and the carts, you can't post or delete anything yet.
+- Split into two functioning modules
 
 This is missing:
 -
