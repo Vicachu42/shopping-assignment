@@ -12,8 +12,8 @@ const errorAdd = new Error('This product is already in your cart');
 const errorDelete = new Error('This product is not in your cart');
 
 app.get('/api/products/:id', (request, response) => {
-    const productID = Number(request.params.id);
-    const data = database.get('products').find({id: productID}).value();
+    const productsID = Number(request.params.id);
+    const data = database.get('products').find({id: productsID}).value();
 
     if (data !== undefined) {
         response.status(200);
@@ -29,34 +29,37 @@ app.get('/api/carts', (request, response) => {
     response.send(data);
 });
 
-app.post('/api/carts', (request, response) => {
-    const queryID = Number(request.query.id);
-    const product = database.get('products').find({id: queryID}).value();
-    const cartIndex = database.get('carts').find({id: queryID}).value();
+app.post('/api/carts/:id', (request, response) => {
+    const productsID = Number(request.params.id);
+    const data = database.get('products').find({id: productsID}).value();
+    const cartsIndex = database.get('carts').find({id: productsID}).value();
 
-    if (cartIndex !== undefined) { 
+    if (cartsIndex !== undefined) { 
         //If product already exists
         console.log('This product is already in your cart');
+        response.status(418);
         response.json(errorAdd.message);
     } else {
         //If product doesn't exist
-        database.get('carts').push(product).write();
-        response.json(product);
+        database.get('carts').push(data).write();
+        response.status(200);
+        response.json(data);
     }
 });
 
-app.delete('/api/carts', (request, response) => {
-    const queryID = Number(request.query.id);
-    const product = database.get('carts').find({id: queryID}).value();
+app.delete('/api/carts/:id', (request, response) => {
+    const productsID = Number(request.params.id);
+    const cartsIndex = database.get('carts').find({id: productsID}).value();
 
-    if (product !== undefined) {
+    if (cartsIndex !== undefined) {
         //If product is in the cart
-        database.get('carts').remove({id: queryID}).write();
+        database.get('carts').remove(cartsIndex).write();
+        response.status(200);
         response.json({success: true});
     } else {
         //If product isn't in the cart
         console.log('This product is not in your cart');
-        // response.status(401)
+        response.status(418);
         response.json(errorDelete.message);
     }
 });
