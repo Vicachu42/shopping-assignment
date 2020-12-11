@@ -14,7 +14,14 @@ const errorDelete = new Error('This product is not in your cart');
 app.get('/api/products/:id', (request, response) => {
     const productID = Number(request.params.id);
     const data = database.get('products').find({id: productID}).value();
-    response.send(data);
+
+    if (data !== undefined) {
+        response.status(200);
+        response.send(data);
+    } else {
+        response.status(418);
+        response.send();
+    }
 });
 
 app.get('/api/carts', (request, response) => {

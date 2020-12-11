@@ -16,6 +16,7 @@ Update so far:
 - Error message if you try to delete a product from the cart that doesn't exist
 - When adding a product, you get info about the specific product.
 - Updated route parameters so you can get a product by typing the number instead of for example "?id=1"
+- Added response codes to the products
 
 This is missing:
 -
