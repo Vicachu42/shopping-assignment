@@ -1,6 +1,6 @@
 # shopping-assignment 
 
-Update so far:
+Project contains:
 -
 - Product requirements fulfilled
 - These endpoints work:
@@ -32,5 +32,4 @@ Missing for a passing grade:
 
 If I have time/energy:
 -
-- Code review
 - Add a message to the adding or deleting of products

@@ -7,46 +7,6 @@ const FileSync = require('lowdb/adapters/FileSync');
 const adapter = new FileSync('database.json');
 const database = new lowdb(adapter);
 
-// const app = express();
-
-// router.get('/api/products', function (request, response) )
-
-/*exports.get_products = function(request, response) {
-    const data = database.get('products').value();
-    response.send(data);
-};
-
-exports.get_carts = function(request, response) {
-    const data = database.get('carts').value();
-    response.send(data);
-};
-
-exports.get_products_id = function(request, response) {
-    const productsId = Number(request.params.id)
-    const data = database.get('products').find({id: productsId}).value();
-
-    if (data !== undefined) {
-        response.status(200)
-        response.send(data);
-    } else {
-        response.status(418)
-        response.send();
-    }
-}
-
-exports.get_carts_id = function(request, response) {
-    const productsId = Number(request.params.id)
-    const data = database.get('carts').find({id: productsId}).value();
-
-    if (data !== undefined) {
-        response.status(200)
-        response.send(data);
-    } else {
-        response.status(418)
-        response.send();
-    }
-}*/
-
 const errorAdd = new Error('This product is already in your cart');
 const errorDelete = new Error('This product is not in your cart');
 
