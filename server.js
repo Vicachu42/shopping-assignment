@@ -11,8 +11,9 @@ const port = 8000;
 const errorAdd = new Error('This product is already in your cart');
 const errorDelete = new Error('This product is not in your cart');
 
-app.get('/api/products', (request, response) => {
-    const data = database.get('products').value();
+app.get('/api/products/:id', (request, response) => {
+    const productID = Number(request.params.id);
+    const data = database.get('products').find({id: productID}).value();
     response.send(data);
 });
 
@@ -29,7 +30,6 @@ app.post('/api/carts', (request, response) => {
     if (cartIndex !== undefined) { 
         //If product already exists
         console.log('This product is already in your cart');
-        // response.status(401)
         response.json(errorAdd.message);
     } else {
         //If product doesn't exist
