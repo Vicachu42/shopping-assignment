@@ -34,12 +34,12 @@ exports.get_carts_id = function(request, response) {
     const cartsId = Number(request.params.id)
     const data = database.get('carts').find({id: cartsId}).value();
 
-    if (data === undefined) {
-        response.status(404)
-        response.send();
-    } else {
+    if (data !== undefined) {
         response.status(200)
         response.send(data);
+    } else {
+        response.status(418)
+        response.send();
     }
 }
 

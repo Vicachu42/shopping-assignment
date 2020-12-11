@@ -1,8 +1,5 @@
 # shopping-assignment
 
-Code is not split into two modules, however none of the function is actually there.
-
-
 Update so far:
 -
 - Product requirements fulfilled
@@ -17,6 +14,7 @@ Update so far:
 - When adding a product, you get info about the specific product.
 - Updated route parameters so you can get, post and a product by typing the number instead of for example "?id=1"
 - Added response codes to the products
+- Split into two modules. While you can get the products and the carts, you can't post or delete anything yet.
 
 This is missing:
 -
@@ -34,6 +32,5 @@ Missing for a passing grade:
 
 If I have time/energy:
 -
-- Modules
 - Code review
 - Add a message to the adding or deleting of products
